@@ -1,0 +1,361 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+/* FUENTE PARA TITULO */
+@font-face {
+    font-family: rem;
+    src: url(REM-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: sedgwick;
+    src: url(SedgwickAveDisplay-Regular.ttf);
+}
+
+body {
+    background-color: rgba(150, 220, 243, 0.575);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+img{
+    height: 250px;
+}
+
+
+
+/* Header */
+h1{
+    color: cadetblue;
+    font-family: sedgwick;
+    text-align: center;
+    text-shadow: 8px 8px 8px black;
+    font-size: 49px;
+    margin-top: 10px;
+}
+.navbar{
+    background-color: #defffc;
+    border-radius: 10px;
+}
+.active{
+    background-color: rgba(95, 158, 160, 0.37);
+    border-radius: 10px;
+}
+/* Main de paginas de ropa */
+/* Tipos de ropa */
+.boxDos{
+    border-left: 2px solid black;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.boxUno{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.boxAncla{
+    padding: 2px;
+    text-align: center;
+    width: 110px;
+    background-color: #defffc;
+}
+.boxAncla a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    color: black;
+}
+.pagina{
+    background-color: rgba(95, 158, 160, 0.795);
+}
+.boxAnclasBig{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Productos */
+.boxGeneral{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.card{
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+.card-body{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #defffc;
+    border-top: 1px solid rgba(0, 0, 0, 0.589);
+}
+.btn{
+    width: fit-content;
+}
+
+/* CONFIGURACION MAIN DE PAGINA CONTACTO */
+h2{
+    display: flex;
+    justify-content: center;
+    font-family: sedgwick;
+    color: cadetblue;
+    font-size: 250%;
+    text-shadow: 4px 4px 4px black;
+    
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 300px;
+    align-items: center;
+    background-color: #defffc;
+    border-radius: 15px;
+}
+
+main form div {
+    margin: 2%;
+}
+
+main form h2 {
+    font-size: 200%;
+}
+
+.boxForm {
+    margin-top: 20px;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.boxForm input{
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.boxForm label{
+    font-size: 20px;
+    color: cadetblue;
+    
+
+}
+
+/* MAIN DE ACERCANOS */
+.boxAcercaNosBig h3{
+    padding-top: 5px;
+    font-size: 120%;
+    font-family: sedgwick;
+    text-align: center;
+    color: cadetblue;
+}
+.boxAcercaNos{
+    background-color: #defffc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+.infoNosotros {
+    text-align: center;
+}
+
+
+/* TODA LA COFIGURACION DEL FOOTER */
+footer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #defffc;
+    margin-bottom: 0;
+    margin-top: auto;
+    height: fit-content;
+}
+
+h4 {
+    color: black;
+}
+
+.texto-foot {
+    color: black;
+}
+.redes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    
+}
+.informacion {
+    height: fit-content;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    
+}
+.informacion ul {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.informacion li {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+.redes nav {
+    display: flex;
+    padding: 5px;
+    width: fit-content;
+    height: 100%;
+    text-align: center;
+}
+.redes img {
+    width: 40px;
+    height: 40px;
+}
+.redes a{
+    margin: 2px;
+    display: flex;
+    align-items: center;
+}
+ /* PAGINA INDEX */
+.menuPrincipal{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+i{
+    font-size: medium;
+    color: black;
+}
+.boxCarrusel{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    height: 300px;
+    overflow: hidden;
+    width: 230px;
+}
+.boxCarrusel img{
+    height: 200px;
+}
+.boxCarrusel h3{
+    padding-top: 5px;
+    padding-bottom: 3px;
+    font-size: x-large;
+    text-align: center;
+    font-family: sedgwick;
+    color: cadetblue;
+    background-color: #defffc;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: 2px solid black;
+    
+}
+.boxCarruselContenido{
+    background-color: #defffc;
+    height: 70px;
+    border-top: 2px solid black;
+}
+.tachar{
+    text-decoration: line-through;
+}
+.item{ 
+    height: 100%;
+    position: relative;
+}
+.tarjetasInicio{
+    height: 100%;
+    text-align: center;
+}
+.flechasInicio{
+    height: 100%;
+    width: 230px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+/* VISTA PARA TABLETAS */
+@media (min-width: 576px)
+{
+    h1{
+        font-size: 80px;
+    }
+    .boxGeneral{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media (min-width: 768px)
+{ 
+    h1{
+        font-size: 90px;
+    }
+    body{
+        background-image: url(fono.jpg);
+        background-size: cover;
+    }
+}
+/* VISTA PARA ESCRITORIO */
+@media (min-width: 992px)
+{
+    .boxGeneral{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .navbar-brand{
+        display: none;
+    }
+    .navbar-nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+@media (min-width: 1200px)
+{
+    .boxGeneral{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+
+
