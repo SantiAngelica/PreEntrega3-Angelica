@@ -13,7 +13,7 @@
     font-family: sedgwick;
     src: url(SedgwickAveDisplay-Regular.ttf);
 }
-
+/* Configuracion general */
 body {
     background-color: rgba(150, 220, 243, 0.575);
     background-repeat: no-repeat;
@@ -89,6 +89,7 @@ h1{
     flex-direction: row;
     justify-content: space-around;
 }
+
 
 /* Productos */
 .boxGeneral{
@@ -249,6 +250,8 @@ h4 {
     display: flex;
     align-items: center;
 }
+
+
  /* PAGINA INDEX */
 .menuPrincipal{
     width: 100%;
