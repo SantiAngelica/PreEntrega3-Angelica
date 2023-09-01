@@ -4,6 +4,7 @@
     box-sizing: 0;
 }
 
+
 /* FUENTE PARA TITULO */
 @font-face {
     font-family: rem;
@@ -13,9 +14,12 @@
     font-family: sedgwick;
     src: url(SedgwickAveDisplay-Regular.ttf);
 }
+
+
+
 /* Configuracion general */
 body {
-    background-color: rgba(150, 220, 243, 0.575);
+    background-image: url(fono.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: rem;
@@ -34,14 +38,13 @@ img{
 }
 
 
-
 /* Header */
 h1{
     color: cadetblue;
     font-family: sedgwick;
     text-align: center;
     text-shadow: 8px 8px 8px black;
-    font-size: 49px;
+    font-size: 50px;
     margin-top: 10px;
 }
 .navbar{
@@ -52,6 +55,8 @@ h1{
     background-color: rgba(95, 158, 160, 0.37);
     border-radius: 10px;
 }
+
+
 /* Main de paginas de ropa */
 /* Tipos de ropa */
 .boxDos{
@@ -114,6 +119,7 @@ h1{
     width: fit-content;
 }
 
+
 /* CONFIGURACION MAIN DE PAGINA CONTACTO */
 h2{
     display: flex;
@@ -124,7 +130,6 @@ h2{
     text-shadow: 4px 4px 4px black;
     
 }
-
 main form {
     display: flex;
     flex-direction: column;
@@ -134,15 +139,12 @@ main form {
     background-color: #defffc;
     border-radius: 15px;
 }
-
 main form div {
     margin: 2%;
 }
-
 main form h2 {
     font-size: 200%;
 }
-
 .boxForm {
     margin-top: 20px;
     flex-direction: column;
@@ -151,19 +153,18 @@ main form h2 {
     display: flex;
     align-items: center;
 }
-
 .boxForm input{
     height: 30px;
     background-color: white;
     border: 1px solid black;
 }
-
 .boxForm label{
     font-size: 20px;
     color: cadetblue;
     
 
 }
+
 
 /* MAIN DE ACERCANOS */
 .boxAcercaNosBig h3{
@@ -197,11 +198,9 @@ footer {
     margin-top: auto;
     height: fit-content;
 }
-
 h4 {
     color: black;
 }
-
 .texto-foot {
     color: black;
 }
@@ -252,67 +251,31 @@ h4 {
 }
 
 
+
  /* PAGINA INDEX */
-.menuPrincipal{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-i{
-    font-size: medium;
-    color: black;
-}
-.boxCarrusel{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    height: 300px;
-    overflow: hidden;
-    width: 230px;
-}
-.boxCarrusel img{
-    height: 200px;
-}
-.boxCarrusel h3{
-    padding-top: 5px;
-    padding-bottom: 3px;
-    font-size: x-large;
-    text-align: center;
+h4{
     font-family: sedgwick;
-    color: cadetblue;
-    background-color: #defffc;
-    text-shadow: 2px 2px 2px black;
-    border-bottom: 2px solid black;
-    
+    font-size: xx-large;
+    margin-bottom: 0;
 }
-.boxCarruselContenido{
-    background-color: #defffc;
-    height: 70px;
-    border-top: 2px solid black;
+figure{
+    margin: auto;
+    width: fit-content; 
 }
-.tachar{
-    text-decoration: line-through;
+.carousel-item{
+    height: 350px;
 }
-.item{ 
-    height: 100%;
-    position: relative;
+.carousel-caption{
+    height: fit-content;
 }
-.tarjetasInicio{
-    height: 100%;
-    text-align: center;
+.carousel{
+    border: 2px solid black;
+    width: 300px;
+    height: 350px;
 }
-.flechasInicio{
-    height: 100%;
-    width: 230px;
-    position: absolute;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-}
+
+
+
 /* VISTA PARA TABLETAS */
 @media (min-width: 576px)
 {
