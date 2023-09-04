@@ -206,14 +206,16 @@ h4 {
 }
 .redes {
     width: 100%;
-    height: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 0;
+    margin-bottom: auto;
     
 }
 .informacion {
+    padding-top: 0;
+    margin-bottom: 0;
     height: fit-content;
     display: flex;
     height: 100%;
@@ -234,18 +236,19 @@ h4 {
     text-align: center;
 }
 .redes nav {
+    width: 240px;
+    padding-top: 10px;
     display: flex;
-    padding: 5px;
-    width: fit-content;
     height: 100%;
-    text-align: center;
+    justify-content: space-around;
+    align-items: center;
 }
 .redes img {
     width: 40px;
     height: 40px;
 }
 .redes a{
-    margin: 2px;
+    height: fit-content;
     display: flex;
     align-items: center;
 }
@@ -253,6 +256,12 @@ h4 {
 
 
  /* PAGINA INDEX */
+.box-img-index{
+    display: none;
+}
+.box-img-index img{
+    display: none;
+}
 h4{
     font-family: sedgwick;
     font-size: xx-large;
@@ -262,21 +271,47 @@ figure{
     margin: auto;
     width: fit-content; 
 }
+.box-slider-index{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    height: fit-content;
+}
 .carousel-item{
     height: 350px;
 }
 .carousel-caption{
     height: fit-content;
+    background-color: #defffc;
+    color: black;
+    border: 2px solid black;
 }
 .carousel{
-    border: 2px solid black;
     width: 300px;
-    height: 350px;
+    height: fit-content;
+}
+.carousel h4{
+    color: cadetblue;
+    text-shadow: 2px 1px 0px black;
+    margin: auto;
+    background-color: #defffc;
+    border: 2px solid black;
+    width: 70%;
+}
+.carousel2{
+    margin-top: 50px;
 }
 
 
 
 /* VISTA PARA TABLETAS */
+@media (min-width: 400px)
+{
+    .carousel{
+        width: 350px;
+    }
+}
 @media (min-width: 576px)
 {
     h1{
@@ -285,10 +320,24 @@ figure{
     .boxGeneral{
         grid-template-columns: 1fr 1fr;
     }
-
 }
 @media (min-width: 768px)
 { 
+    .box-img-index{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .box-img-index img{
+        display: inline;
+        height: 150px;
+    }
+    .box-slider-index{
+        grid-template-columns: 1fr 1fr;
+    }
+    .carousel2{
+        margin-top: 0;
+    }
     h1{
         font-size: 90px;
     }
@@ -300,6 +349,13 @@ figure{
 /* VISTA PARA ESCRITORIO */
 @media (min-width: 992px)
 {
+    .carousel{
+        width: 400px;
+    }
+    .box-img-index img{
+        display: inline;
+        height: 200px;
+    }
     .boxGeneral{
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -317,6 +373,10 @@ figure{
 }
 @media (min-width: 1200px)
 {
+    .box-img-index img{
+        display: inline;
+        height: 250px;
+    }
     .boxGeneral{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
