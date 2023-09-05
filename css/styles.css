@@ -105,7 +105,13 @@ h1{
 .card{
     width: 250px;
     background-color: rgb(255, 255, 255);
-    border: 1px solid black;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
 }
 .card-body{
     height: fit-content;
@@ -113,8 +119,9 @@ h1{
     flex-direction: column;
     align-items: center;
     background-color: #defffc;
-    border-top: 1px solid rgba(0, 0, 0, 0.589);
+    border-top: 1px solid rgba(0, 0, 0,);
 }
+
 .btn{
     width: fit-content;
 }
@@ -285,7 +292,6 @@ figure{
     height: fit-content;
     background-color: #defffc;
     color: black;
-    border: 2px solid black;
 }
 .carousel{
     width: 300px;
