@@ -10,6 +10,7 @@
     font-family: rem;
     src: url(REM-VariableFont_wght.ttf);
 }
+
 @font-face {
     font-family: sedgwick;
     src: url(SedgwickAveDisplay-Regular.ttf);
@@ -27,19 +28,22 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-a{
+
+a {
     text-decoration: none;
 }
-li{
+
+li {
     list-style-type: none;
 }
-img{
+
+img {
     height: 250px;
 }
 
 
 /* Header */
-h1{
+h1 {
     color: cadetblue;
     font-family: sedgwick;
     text-align: center;
@@ -47,11 +51,13 @@ h1{
     font-size: 50px;
     margin-top: 10px;
 }
-.navbar{
+
+.navbar {
     background-color: #defffc;
     border-radius: 10px;
 }
-.active{
+
+.active {
     background-color: rgba(95, 158, 160, 0.37);
     border-radius: 10px;
 }
@@ -59,32 +65,37 @@ h1{
 
 /* Main de paginas de ropa */
 /* Tipos de ropa */
-.boxDos{
+.boxDos {
     border-left: 2px solid black;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
 }
-.boxUno{
+
+.boxUno {
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
 }
-.boxAncla{
+
+.boxAncla {
     padding: 2px;
     text-align: center;
     width: 110px;
     background-color: #defffc;
 }
-.boxAncla a{
+
+.boxAncla a {
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: center;
     color: black;
 }
-.pagina{
+
+.pagina {
     background-color: rgba(95, 158, 160, 0.795);
 }
-.boxAnclasBig{
+
+.boxAnclasBig {
     width: fit-content;
     height: fit-content;
     margin-top: 15px;
@@ -97,100 +108,145 @@ h1{
 
 
 /* Productos */
-.boxGeneral{
+.boxGeneral {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
 }
-.card{
+
+.card {
     width: 250px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
     transition: all 400ms ease;
 }
-.card:hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3%);
 }
-.card-body{
+
+.card-body {
     height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #defffc;
-    border-top: 1px solid rgba(0, 0, 0,);
+    border-top: 1px solid rgba(0, 0, 0, );
 }
 
-.btn{
+.btn {
     width: fit-content;
+    background-color: cadetblue;
+    border: 1px solid rgb(130, 158, 160);
+}
+
+.btn:hover {
+    background-color: rgb(103, 231, 103);
+    border: 1px solid rgb(103, 231, 103)
 }
 
 
 /* CONFIGURACION MAIN DE PAGINA CONTACTO */
-h2{
+h2 {
     display: flex;
     justify-content: center;
     font-family: sedgwick;
     color: cadetblue;
     font-size: 250%;
     text-shadow: 4px 4px 4px black;
-    
+
 }
+
 main form {
     display: flex;
     flex-direction: column;
     height: fit-content;
-    width: 300px;
+    width: 90%;
     align-items: center;
     background-color: #defffc;
     border-radius: 15px;
 }
+
 main form div {
     margin: 2%;
 }
+
 main form h2 {
     font-size: 200%;
 }
+
 .boxForm {
     margin-top: 20px;
+    margin-bottom: 20px;
     flex-direction: column;
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
 }
-.boxForm input{
+
+.boxFormInd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.boxForm input {
     height: 30px;
     background-color: white;
     border: 1px solid black;
 }
-.boxForm label{
-    font-size: 20px;
-    color: cadetblue;
-    
 
+.inputasoc {
+    width: 70%;
 }
 
+.boxForm label {
+    font-size: 20px;
+    color: cadetblue;
+    font-weight: bold;
+}
 
+.botonEnviar {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 /* MAIN DE ACERCANOS */
-.boxAcercaNosBig h3{
+.boxAcercaNosBig h3 {
     padding-top: 5px;
-    font-size: 120%;
+    font-size: 30px;
     font-family: sedgwick;
     text-align: center;
     color: cadetblue;
 }
-.boxAcercaNos{
+
+.boxAcercaNos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #defffc;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin:10px;
     border-radius: 20px;
+    padding: 10px;
+}
+.ubicaciones{
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
 }
 .infoNosotros {
     text-align: center;
+    margin-bottom: 0;
+}
+.boxAcercaNos img{
+    height: 24px;
 }
 
 
@@ -205,12 +261,15 @@ footer {
     margin-top: auto;
     height: fit-content;
 }
+
 h4 {
     color: black;
 }
+
 .texto-foot {
     color: black;
 }
+
 .redes {
     width: 100%;
     height: fit-content;
@@ -218,8 +277,9 @@ h4 {
     flex-direction: column;
     align-items: center;
     margin-bottom: auto;
-    
+
 }
+
 .informacion {
     padding-top: 0;
     margin-bottom: 0;
@@ -227,8 +287,9 @@ h4 {
     display: flex;
     height: 100%;
     width: 100%;
-    
+
 }
+
 .informacion ul {
     padding: 0;
     width: 100%;
@@ -237,11 +298,13 @@ h4 {
     flex-direction: column;
     justify-content: center;
 }
+
 .informacion li {
     width: 100%;
     font-weight: bold;
     text-align: center;
 }
+
 .redes nav {
     width: 240px;
     padding-top: 10px;
@@ -250,11 +313,13 @@ h4 {
     justify-content: space-around;
     align-items: center;
 }
+
 .redes img {
     width: 40px;
     height: 40px;
 }
-.redes a{
+
+.redes a {
     height: fit-content;
     display: flex;
     align-items: center;
@@ -262,42 +327,50 @@ h4 {
 
 
 
- /* PAGINA INDEX */
-.box-img-index{
+/* PAGINA INDEX */
+.box-img-index {
     display: none;
 }
-.box-img-index img{
+
+.box-img-index img {
     display: none;
 }
-h4{
+
+h4 {
     font-family: sedgwick;
     font-size: xx-large;
     margin-bottom: 0;
 }
-figure{
+
+figure {
     margin: auto;
-    width: fit-content; 
+    width: fit-content;
 }
-.box-slider-index{
+
+.box-slider-index {
     display: grid;
     align-items: center;
     justify-items: center;
     grid-template-columns: 1fr;
     height: fit-content;
 }
-.carousel-item{
+
+.carousel-item {
     height: 350px;
 }
-.carousel-caption{
+
+.carousel-caption {
     height: fit-content;
     background-color: #defffc;
     color: black;
 }
-.carousel{
+
+.carousel {
     width: 300px;
     height: fit-content;
 }
-.carousel h4{
+
+.carousel h4 {
     color: cadetblue;
     text-shadow: 2px 1px 0px black;
     margin: auto;
@@ -305,89 +378,129 @@ figure{
     border: 2px solid black;
     width: 70%;
 }
-.carousel2{
+
+.carousel2 {
     margin-top: 50px;
 }
 
 
 
 /* VISTA PARA TABLETAS */
-@media (min-width: 400px)
-{
-    .carousel{
+@media (min-width: 400px) {
+    .carousel {
         width: 350px;
     }
 }
-@media (min-width: 576px)
-{
-    h1{
+
+@media (min-width: 576px) {
+    .ubicaciones{
+        width: 80%;
+    }
+    main form {
+        width: 400px;
+    }
+
+    .boxForm label {
+        font-size: 25px;
+    }
+
+    h1 {
         font-size: 80px;
     }
-    .boxGeneral{
+
+    .boxGeneral {
         grid-template-columns: 1fr 1fr;
     }
 }
-@media (min-width: 768px)
-{ 
-    .box-img-index{
+
+@media (min-width: 768px) {
+    .ubicaciones{
+        width: 50%;
+    }
+    main form {
+        width: 450px;
+    }
+
+    .boxForm label {
+        font-size: 25px;
+    }
+
+    .box-img-index {
         margin-top: 30px;
         display: flex;
         justify-content: center;
     }
-    .box-img-index img{
+
+    .box-img-index img {
         display: inline;
         height: 150px;
     }
-    .box-slider-index{
+
+    .box-slider-index {
         grid-template-columns: 1fr 1fr;
     }
-    .carousel2{
+
+    .carousel2 {
         margin-top: 0;
     }
-    h1{
+
+    h1 {
         font-size: 90px;
     }
-    body{
+
+    body {
         background-image: url(fono.jpg);
         background-size: cover;
     }
 }
+
 /* VISTA PARA ESCRITORIO */
-@media (min-width: 992px)
-{
-    .carousel{
+@media (min-width: 992px) {
+    main form{
+        width: 500px;
+    }
+    .boxForm label{
+        font-size: 30px;
+    }
+    .carousel {
         width: 400px;
     }
-    .box-img-index img{
+
+    .box-img-index img {
         display: inline;
         height: 200px;
     }
-    .boxGeneral{
+
+    .boxGeneral {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .navbar{
+
+    .navbar {
         width: 100%;
     }
-    .navbar-brand{
+
+    .navbar-brand {
         display: none;
     }
-    .navbar-nav{
+
+    .navbar-nav {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
     }
 }
-@media (min-width: 1200px)
-{
-    .box-img-index img{
+
+@media (min-width: 1200px) {
+    .ubicaciones{
+        width: 40%;
+    }
+    .box-img-index img {
         display: inline;
         height: 250px;
     }
-    .boxGeneral{
+
+    .boxGeneral {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
 }
-
-
-
