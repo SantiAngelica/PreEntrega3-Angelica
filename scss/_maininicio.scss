@@ -1,0 +1,56 @@
+// PAGINA INDEX
+.box-img-index {
+    display: none;
+  
+    img {
+      display: none;
+    }
+  }
+  
+  h4 {
+    font-family: sedgwick;
+    font-size: xx-large;
+    margin-bottom: 0;
+  }
+  
+  figure {
+    margin: auto;
+    width: fit-content;
+  }
+  
+  .box-slider-index {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    height: fit-content;
+  }
+  
+  .carousel-item {
+    height: 350px;
+  }
+  
+  .carousel-caption {
+    height: fit-content;
+    background-color: #defffc;
+    color: black;
+  }
+  
+  .carousel {
+    width: 300px;
+    height: fit-content;
+  
+    h4 {
+      color: cadetblue;
+      text-shadow: 2px 1px 0px black;
+      margin: auto;
+      background-color: #defffc;
+      border: 2px solid black;
+      width: 70%;
+    }
+  }
+  
+  .carousel2 {
+    margin-top: 50px;
+  }
+  

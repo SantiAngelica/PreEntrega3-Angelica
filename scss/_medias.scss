@@ -1,0 +1,119 @@
+/* VISTA PARA TABLETAS */
+@media (min-width: 400px) {
+    .carousel {
+        width: 350px;
+    }
+}
+
+@media (min-width: 576px) {
+    .ubicaciones{
+        width: 80%;
+    }
+    main form {
+        width: 400px;
+    }
+
+    .boxForm label {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    .boxGeneral {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .ubicaciones{
+        width: 50%;
+    }
+    main form {
+        width: 450px;
+    }
+
+    .boxForm label {
+        font-size: 25px;
+    }
+
+    .box-img-index {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-img-index img {
+        display: inline;
+        height: 150px;
+    }
+
+    .box-slider-index {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .carousel2 {
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 90px;
+    }
+
+    body {
+        background-image: url(fono.jpg);
+        background-size: cover;
+    }
+}
+
+/* VISTA PARA ESCRITORIO */
+@media (min-width: 992px) {
+    main form{
+        width: 500px;
+    }
+    .boxForm label{
+        font-size: 30px;
+    }
+    .carousel {
+        width: 400px;
+    }
+
+    .box-img-index img {
+        display: inline;
+        height: 200px;
+    }
+
+    .boxGeneral {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1200px) {
+    .ubicaciones{
+        width: 40%;
+    }
+    .box-img-index img {
+        display: inline;
+        height: 250px;
+    }
+
+    .boxGeneral {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
