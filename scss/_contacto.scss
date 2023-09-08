@@ -1,22 +1,18 @@
 //PAGINA DE CONTACTO
 h2 {
-    display: flex;
-    justify-content: center;
+    @include dflex(row, nowrap, center, start);
     font-family: sedgwick;
-    color: cadetblue;
+    color: $colorprin;
     font-size: 250%;
     text-shadow: 4px 4px 4px black;
   }
   
   main form {
-    display: flex;
-    flex-direction: column;
+    @include dflex(column, nowrap, start, center);
     height: fit-content;
     width: 90%;
-    align-items: center;
-    background-color: #defffc;
+    background-color: $colorsecu;
     border-radius: 15px;
-  
     div {
       margin: 2%;
     }
@@ -27,19 +23,15 @@ h2 {
   }
   
   .boxForm {
+    @include dflex(column, nowrap, start, center);
     margin-top: 20px;
     margin-bottom: 20px;
-    flex-direction: column;
     height: 100%;
     width: 100%;
-    display: flex;
-    align-items: center;
   }
   
   .boxFormInd {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include dflex(column, nowrap, start, center);
     width: 100%;
   }
   
@@ -55,14 +47,12 @@ h2 {
   
   .boxForm label {
     font-size: 20px;
-    color: cadetblue;
+    color: $colorprin;
     font-weight: bold;
   }
   
   .botonEnviar {
-    display: flex;
+    @include dflex(row, nowrap, space-evenly, start);
     width: 80%;
-    flex-direction: row;
-    justify-content: space-evenly;
   }
   

@@ -15,12 +15,11 @@
   }
   
   body {
+    @include dflex(column,0,0,0);
     background-image: url(fono.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: rem;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
   }
   

@@ -32,7 +32,7 @@
   
   .carousel-caption {
     height: fit-content;
-    background-color: #defffc;
+    background-color: $colorsecu;
     color: black;
   }
   
@@ -41,10 +41,10 @@
     height: fit-content;
   
     h4 {
-      color: cadetblue;
+      color: $colorprin;
       text-shadow: 2px 1px 0px black;
       margin: auto;
-      background-color: #defffc;
+      background-color: $colorsecu;
       border: 2px solid black;
       width: 70%;
     }

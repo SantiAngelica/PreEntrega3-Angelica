@@ -4,7 +4,7 @@ footer {
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    background-color: #defffc;
+    background-color: $colorsecu;
     margin-bottom: 0;
     margin-top: auto;
     height: fit-content;
@@ -15,11 +15,9 @@ footer {
   }
   
   .redes {
+    @include dflex(column, nowrap, start, center);
     width: 100%;
     height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: auto;
   }
   
@@ -32,12 +30,10 @@ footer {
     width: 100%;
   
     ul {
+      @include dflex(column, nowrap, center, start);
       padding: 0;
       width: 100%;
       height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
     }
   
     li {
@@ -49,12 +45,10 @@ footer {
   
   .redes {
     nav {
+      @include dflex(0,0, space-around, center);
       width: 240px;
       padding-top: 10px;
-      display: flex;
       height: 100%;
-      justify-content: space-around;
-      align-items: center;
     }
   
     img {
@@ -63,9 +57,8 @@ footer {
     }
   
     a {
+      @include dflex(0,0,0, center);
       height: fit-content;
-      display: flex;
-      align-items: center;
     }
   }
   

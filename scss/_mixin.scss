@@ -1,0 +1,7 @@
+@mixin dflex($flexdir, $flexwr, $justcont, $aliitm){
+    display: flex;
+    flex-direction: $flexdir;
+    flex-wrap: $flexwr;
+    justify-content: $justcont;
+    align-items: $aliitm;
+}

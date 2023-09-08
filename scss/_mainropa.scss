@@ -14,7 +14,7 @@
     padding: 2px;
     text-align: center;
     width: 110px;
-    background-color: #defffc;
+    background-color: $colorsecu;
   
     a {
       display: flex;
@@ -30,14 +30,12 @@
   }
   
   .boxAnclasBig {
+    @include dflex(row, 0, space-around,0);
     width: fit-content;
     height: fit-content;
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
   }
   
   .boxGeneral {
@@ -59,17 +57,15 @@
   }
   
   .card-body {
+    @include dflex(column, 0, 0, center);
     height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #defffc;
+    background-color: $colorsecu;
     border-top: 1px solid rgba(0, 0, 0);
   }
   
   .btn {
     width: fit-content;
-    background-color: cadetblue;
+    background-color: $colorprin;
     border: 1px solid rgb(130, 158, 160);
   
     &:hover {

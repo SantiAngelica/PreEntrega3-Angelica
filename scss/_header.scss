@@ -1,6 +1,6 @@
 //HEADER
 h1 {
-    color: cadetblue;
+    color: $colorprin;
     font-family: sedgwick;
     text-align: center;
     text-shadow: 8px 8px 8px black;
@@ -9,7 +9,7 @@ h1 {
 }
 
 .navbar {
-    background-color: #defffc;
+    background-color: $colorsecu;
     border-radius: 10px;
 }
 

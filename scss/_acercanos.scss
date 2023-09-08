@@ -4,14 +4,12 @@
     font-size: 30px;
     font-family: sedgwick;
     text-align: center;
-    color: cadetblue;
+    color: $colorprin;
   }
   
   .boxAcercaNos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #defffc;
+    @include dflex(column, nowrap, unset, center );
+    background-color: $colorsecu;
     margin: 10px;
     border-radius: 20px;
     padding: 10px;
@@ -21,8 +19,7 @@
     margin-top: 5px;
     width: 100%;
     margin-bottom: 0;
-    display: flex;
-    justify-content: space-around;
+    @include dflex(row, nowrap, space-around, start);
   }
   
   .infoNosotros {
