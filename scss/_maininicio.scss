@@ -19,10 +19,9 @@
   }
   
   .box-slider-index {
-    display: grid;
+    @include dgrid(column,1);
     align-items: center;
     justify-items: center;
-    grid-template-columns: 1fr;
     height: fit-content;
   }
   

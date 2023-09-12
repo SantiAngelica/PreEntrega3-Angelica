@@ -17,10 +17,9 @@
     background-color: $colorsecu;
   
     a {
-      display: flex;
+      @include dflex(0,0,center,0);
       width: 100%;
       height: 100%;
-      justify-content: center;
       color: black;
     }
   }
@@ -39,8 +38,7 @@
   }
   
   .boxGeneral {
-    display: grid;
-    grid-template-columns: 1fr;
+    @include dgrid(column,1);
     justify-items: center;
   }
   

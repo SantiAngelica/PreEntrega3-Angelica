@@ -1,9 +1,8 @@
 // FOOTER
 footer {
-    display: grid;
+    @include dgrid(column,1);
+    @include dgrid(row,2);
     width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
     background-color: $colorsecu;
     margin-bottom: 0;
     margin-top: auto;
