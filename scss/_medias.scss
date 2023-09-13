@@ -84,7 +84,7 @@
     }
 
     .boxGeneral {
-        @include dgrif(column,3);
+        @include dgrid(column,3);
     }
 
     .navbar {

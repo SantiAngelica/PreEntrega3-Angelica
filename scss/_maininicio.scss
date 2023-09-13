@@ -1,55 +1,60 @@
 // PAGINA INDEX
 .box-img-index {
+  display: none;
+
+  img {
     display: none;
-  
-    img {
-      display: none;
+    transition: all 200ms;
+    &:hover{
+      transform: scale(1.05,1.05);
     }
   }
   
+}
+
+h4 {
+  font-family: sedgwick;
+  font-size: xx-large;
+  margin-bottom: 0;
+}
+
+figure {
+  margin: auto;
+  width: fit-content;
+}
+
+.box-slider-index {
+  @include dgrid(column, 1);
+  align-items: center;
+  justify-items: center;
+  height: fit-content;
+
+}
+
+.carousel-item {
+  height: 350px;
+}
+
+.carousel-caption {
+  height: fit-content;
+  background-color: $colorsecu;
+  color: black;
+}
+
+.carousel {
+  width: 300px;
+  height: fit-content;
+
   h4 {
-    font-family: sedgwick;
-    font-size: xx-large;
-    margin-bottom: 0;
-  }
-  
-  figure {
+    color: $colorprin;
+    text-shadow: 2px 1px 0px black;
     margin: auto;
-    width: fit-content;
-  }
-  
-  .box-slider-index {
-    @include dgrid(column,1);
-    align-items: center;
-    justify-items: center;
-    height: fit-content;
-  }
-  
-  .carousel-item {
-    height: 350px;
-  }
-  
-  .carousel-caption {
-    height: fit-content;
     background-color: $colorsecu;
-    color: black;
+    border: 2px solid black;
+    width: 70%;
   }
-  
-  .carousel {
-    width: 300px;
-    height: fit-content;
-  
-    h4 {
-      color: $colorprin;
-      text-shadow: 2px 1px 0px black;
-      margin: auto;
-      background-color: $colorsecu;
-      border: 2px solid black;
-      width: 70%;
-    }
-  }
-  
-  .carousel2 {
-    margin-top: 50px;
-  }
-  
+}
+
+.carousel2 {
+  margin-top: 50px;
+}
