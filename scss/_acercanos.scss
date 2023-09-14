@@ -1,33 +1,32 @@
 //PAGINA ACERCA DE NOSOTROS
 .boxAcercaNosBig h3 {
-    padding-top: 5px;
-    font-size: 30px;
-    font-family: sedgwick;
-    text-align: center;
-    color: $colorprin;
-  }
-  
-  .boxAcercaNos {
-    @include dflex(column, nowrap, unset, center );
-    background-color: $colorsecu;
-    margin: 10px;
-    border-radius: 20px;
-    padding: 10px;
-  }
-  
-  .ubicaciones {
-    margin-top: 5px;
-    width: 100%;
-    margin-bottom: 0;
-    @include dflex(row, nowrap, space-around, start);
-  }
-  
-  .infoNosotros {
-    text-align: center;
-    margin-bottom: 0;
-  }
-  
-  .boxAcercaNos img {
-    height: 24px;
-  }
-  
+  padding-top: 5px;
+  font-size: 30px;
+  font-family: $familytitle;
+  text-align: center;
+  color: $colorprin;
+}
+
+.boxAcercaNos {
+  @include dflex(column, nowrap, unset, center);
+  background-color: $colorsecu;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.ubicaciones {
+  margin-top: 5px;
+  width: 100%;
+  margin-bottom: 0;
+  @include dflex(row, nowrap, space-around, start);
+}
+
+.infoNosotros {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.boxAcercaNos img {
+  height: 24px;
+}

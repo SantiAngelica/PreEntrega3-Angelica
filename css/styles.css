@@ -278,8 +278,8 @@ h2 {
   align-items: start;
   font-family: sedgwick;
   color: cadetblue;
-  font-size: 250%;
-  text-shadow: 4px 4px 4px black;
+  font-size: 300%;
+  text-shadow: 5px 5px 4px black;
 }
 
 main form {
@@ -290,7 +290,7 @@ main form {
   align-items: center;
   height: fit-content;
   width: 90%;
-  background-color: #defffc;
+  background-image: linear-gradient(to right, #defffc, #32d3ce, #defffc);
   border-radius: 15px;
 }
 main form div {
@@ -311,6 +311,18 @@ main form h2 {
   height: 100%;
   width: 100%;
 }
+.boxForm input {
+  height: 30px;
+  background-color: white;
+  border: 1px solid black;
+}
+.boxForm label {
+  font-family: sedgwick;
+  font-size: 20px;
+  color: cadetblue;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+}
 
 .boxFormInd {
   display: flex;
@@ -321,20 +333,8 @@ main form h2 {
   width: 100%;
 }
 
-.boxForm input {
-  height: 30px;
-  background-color: white;
-  border: 1px solid black;
-}
-
 .inputasoc {
   width: 70%;
-}
-
-.boxForm label {
-  font-size: 20px;
-  color: cadetblue;
-  font-weight: bold;
 }
 
 .botonEnviar {
@@ -344,6 +344,9 @@ main form h2 {
   justify-content: space-evenly;
   align-items: start;
   width: 80%;
+}
+.botonEnviar input:hover {
+  transform: translateY(-3%);
 }
 
 .boxAcercaNosBig h3 {
