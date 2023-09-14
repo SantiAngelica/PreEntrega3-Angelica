@@ -120,6 +120,10 @@ h4, .texto-foot {
 .redes img {
   width: 40px;
   height: 40px;
+  filter: grayscale(100%);
+}
+.redes img:hover {
+  filter: grayscale(0%);
 }
 .redes a {
   display: flex;
@@ -290,7 +294,7 @@ main form {
   align-items: center;
   height: fit-content;
   width: 90%;
-  background-image: linear-gradient(to right, #defffc, #32d3ce, #defffc);
+  background-image: linear-gradient(to right, #defffc, #54d4d0, #defffc);
   border-radius: 15px;
 }
 main form div {
@@ -313,12 +317,14 @@ main form h2 {
 }
 .boxForm input {
   height: 30px;
-  background-color: white;
+  background-color: black;
   border: 1px solid black;
+  border-radius: 10px;
+  color: white;
 }
 .boxForm label {
   font-family: sedgwick;
-  font-size: 20px;
+  font-size: 30px;
   color: cadetblue;
   font-weight: bold;
   text-shadow: 2px 2px 2px black;
@@ -331,10 +337,15 @@ main form h2 {
   justify-content: start;
   align-items: center;
   width: 100%;
+  margin: 0;
 }
 
 .inputasoc {
-  width: 70%;
+  width: 80%;
+}
+.inputasoc:focus {
+  background-color: white;
+  height: 50px;
 }
 
 .botonEnviar {
@@ -346,7 +357,7 @@ main form h2 {
   width: 80%;
 }
 .botonEnviar input:hover {
-  transform: translateY(-3%);
+  transform: translateY(-5%);
 }
 
 .boxAcercaNosBig h3 {
@@ -363,7 +374,7 @@ main form h2 {
   flex-wrap: nowrap;
   justify-content: unset;
   align-items: center;
-  background-color: #defffc;
+  background-image: linear-gradient(to right, #54d4d0, #defffc, #54d4d0);
   margin: 10px;
   border-radius: 20px;
   padding: 10px;
@@ -399,11 +410,8 @@ main form h2 {
   .ubicaciones {
     width: 80%;
   }
-  main form {
-    width: 400px;
-  }
   .boxForm label {
-    font-size: 25px;
+    font-size: 40px;
   }
   h1 {
     font-size: 80px;
@@ -414,14 +422,11 @@ main form h2 {
   }
 }
 @media (min-width: 768px) {
+  main form {
+    width: 688px;
+  }
   .ubicaciones {
     width: 50%;
-  }
-  main form {
-    width: 450px;
-  }
-  .boxForm label {
-    font-size: 25px;
   }
   .box-img-index {
     margin-top: 30px;
@@ -452,11 +457,8 @@ main form h2 {
 }
 /* VISTA PARA ESCRITORIO */
 @media (min-width: 992px) {
-  main form {
-    width: 500px;
-  }
   .boxForm label {
-    font-size: 30px;
+    font-size: 45px;
   }
   .carousel {
     width: 400px;

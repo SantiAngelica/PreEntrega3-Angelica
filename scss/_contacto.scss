@@ -11,7 +11,7 @@ main form {
   @include dflex(column, nowrap, start, center);
   height: fit-content;
   width: 90%;
-  background-image: linear-gradient(to right, #defffc, #32d3ce, #defffc);
+  background-image: linear-gradient(to right, #defffc, #54d4d0, #defffc);
   border-radius: 15px;
 
   div {
@@ -32,13 +32,15 @@ main form {
 
   input {
     height: 30px;
-    background-color: white;
+    background-color: black;
     border: 1px solid black;
+    border-radius: 10px;
+    color: white;
   }
 
   label {
     font-family: $familytitle;
-    font-size: 20px;
+    font-size: 30px;
     color: $colorprin;
     font-weight: bold;
     text-shadow: 2px 2px 2px black
@@ -48,10 +50,15 @@ main form {
 .boxFormInd {
   @include dflex(column, nowrap, start, center);
   width: 100%;
+  margin: 0;
 }
 
 .inputasoc {
-  width: 70%;
+  width: 80%;
+  &:focus{
+    background-color: white;
+    height: 50px;
+  }
 }
 
 .botonEnviar {
@@ -59,7 +66,7 @@ main form {
   width: 80%;
   input{
     &:hover{
-      transform: translateY(-3%);
+      transform: translateY(-5%);
     }
   }
 }

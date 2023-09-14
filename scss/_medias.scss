@@ -9,12 +9,9 @@
     .ubicaciones{
         width: 80%;
     }
-    main form {
-        width: 400px;
-    }
 
     .boxForm label {
-        font-size: 25px;
+        font-size: 40px;
     }
 
     h1 {
@@ -27,15 +24,11 @@
 }
 
 @media (min-width: 768px) {
+    main form{
+        width: 688px;
+    }
     .ubicaciones{
         width: 50%;
-    }
-    main form {
-        width: 450px;
-    }
-
-    .boxForm label {
-        font-size: 25px;
     }
 
     .box-img-index {
@@ -68,11 +61,8 @@
 
 /* VISTA PARA ESCRITORIO */
 @media (min-width: 992px) {
-    main form{
-        width: 500px;
-    }
     .boxForm label{
-        font-size: 30px;
+        font-size: 45px;
     }
     .carousel {
         width: 400px;

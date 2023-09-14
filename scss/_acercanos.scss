@@ -9,7 +9,7 @@
 
 .boxAcercaNos {
   @include dflex(column, nowrap, unset, center);
-  background-color: $colorsecu;
+  background-image: linear-gradient(to right,#54d4d0, #defffc, #54d4d0,);
   margin: 10px;
   border-radius: 20px;
   padding: 10px;
