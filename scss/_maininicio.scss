@@ -12,12 +12,6 @@
   
 }
 
-h4 {
-  font-family: $familytitle;
-  font-size: xx-large;
-  margin-bottom: 0;
-}
-
 figure {
   margin: auto;
   width: fit-content;
@@ -27,6 +21,7 @@ figure {
   @include dgrid(column, 1);
   align-items: center;
   justify-items: center;
+  width: 100%;
   height: fit-content;
 
 }
@@ -39,13 +34,19 @@ figure {
   height: fit-content;
   background-color: $colorsecu;
   color: black;
+  h3{
+    font-size: x-large;
+  }
 }
 
 .carousel {
-  width: 300px;
+  width: 100%;
   height: fit-content;
 
-  h4 {
+  h2 {
+    font-family: $familytitle;
+    font-size: xx-large;
+    margin-bottom: 0;
     color: $colorprin;
     text-shadow: 2px 1px 0px black;
     margin: auto;
