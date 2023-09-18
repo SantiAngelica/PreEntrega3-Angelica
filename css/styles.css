@@ -180,8 +180,8 @@ figure {
   font-family: sedgwick;
   font-size: xx-large;
   margin-bottom: 0;
-  color: cadetblue;
-  text-shadow: 2px 1px 0px black;
+  color: black;
+  text-shadow: none;
   margin: auto;
   background-color: #defffc;
   border: 2px solid black;
