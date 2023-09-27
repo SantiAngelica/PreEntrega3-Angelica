@@ -5,14 +5,28 @@
   font-family: $familytitle;
   text-align: center;
   color: $colorprin;
+  text-shadow: 3px 3px 2px black;
 }
 
 .boxAcercaNos {
   @include dflex(column, nowrap, unset, center);
-  background-image: linear-gradient(to right,#54d4d0, #defffc, #54d4d0,);
+  background-image: linear-gradient(to top right ,  $colorsecu, #25A8F8, #25F8E8,#25F8AB,#253FF8 , $colorprin, );
+  background-size: 700% 700%;
+  animation: color 3s ease-in-out infinite;
   margin: 10px;
   border-radius: 20px;
   padding: 10px;
+}
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
 }
 
 .ubicaciones {

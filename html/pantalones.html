@@ -62,7 +62,9 @@
                 </figure>
                 <div class="card-body rounded-bottom-5">
                     <h5 class="card-title text-center mb-1">Cargo beige</h5>
-                    <p class="card-text text-center mb-1 ">$11.000</p>
+                    <div class="precio mb-2">
+                        <p class="card-text text-center">$11.000</p>
+                    </div>
                     <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         Comprar
@@ -75,7 +77,9 @@
                 </figure>
                 <div class="card-body rounded-bottom-5">
                     <h5 class="card-title text-center mb-1">Cargo beige recto</h5>
-                    <p class="card-text text-center mb-1 ">$11.000</p>
+                    <div class="precio mb-2">
+                        <p class="card-text text-center">$11.000</p>
+                    </div>
                     <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         Comprar
@@ -87,8 +91,10 @@
                     <img src="../icon/imgpan/pancarg-mr.png" alt="Cargo verde recto">
                 </figure>
                 <div class="card-body rounded-bottom-5">
-                    <h5 class="card-title text-center">Cargo verde recto</h5>
-                    <p class="card-text text-center mb-1">$11.000</p>
+                    <h5 class="card-title text-center mb-1">Cargo verde recto</h5>
+                    <div class="precio mb-2">
+                        <p class="card-text text-center">$11.000</p>
+                    </div>
                     <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         Comprar
@@ -100,9 +106,11 @@
                     <img src="../icon/imgpan/pancarg-vr.png" alt="Cargo verde">
                 </figure>
                 <div class="card-body rounded-bottom-5">
-                    <h5 class="card-title text-center">Cargo verde</h5>
-                    <p class="card-text text-center mb-0 text-decoration-line-through">$11.000</p>
-                    <p class="card-text text-center fw-bold mb-1">$7.700</p>
+                    <h5 class="card-title text-center mb-1">Cargo verde</h5>
+                    <div class="precio mb-2">
+                        <p class="card-text text-center mb-0 text-decoration-line-through">$11.000</p>
+                        <p class="card-text text-center fw-bold">$7.700</p>
+                    </div>
                     <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         Comprar
@@ -118,11 +126,12 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <label for="number" class="seleclabel">¿Cuantos productos desea comprar?</label>
+                        <input type="number" name="number" class="selec" min="0" max="12" value="0">
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary">Añadir al carrito</button>
+                        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn" data-bs-dismiss="modal">Añadir al carrito</button>
                     </div>
                 </div>
             </div>

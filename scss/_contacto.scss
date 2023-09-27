@@ -11,15 +11,27 @@ main form {
   @include dflex(column, nowrap, start, center);
   height: fit-content;
   width: 90%;
-  background-image: linear-gradient(to right, #defffc, #54d4d0, #defffc);
+  background-image: linear-gradient(to top right , $colorsecu, #25A8F8, #25F8E8,#25F8AB,#253FF8 , $colorprin, );
+  background-size: 700% 700%;
+  animation: color 3s ease-in-out infinite;
   border-radius: 15px;
-
   div {
     margin: 2%;
   }
 
   h2 {
     font-size: 200%;
+  }
+}
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
   }
 }
 

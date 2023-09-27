@@ -6,7 +6,7 @@
 }
 
 @media (min-width: 576px) {
-    .ubicaciones{
+    .ubicaciones {
         width: 80%;
     }
 
@@ -19,32 +19,35 @@
     }
 
     .boxGeneral {
-        @include dgrid(column,2);
+        @include dgrid(column, 2);
     }
 }
+
 @media (min-width: 710px) {
     .box-slider-index {
-        @include dgrid(column,2);
+        @include dgrid(column, 2);
     }
 }
 
 @media (min-width: 768px) {
-    main form{
+    main form {
         width: 688px;
     }
-    .ubicaciones{
+
+    .ubicaciones {
         width: 50%;
     }
 
     .box-img-index {
         margin-top: 30px;
-        @include dflex(0,0,center,0)
+        @include dflex(0, 0, center, 0)
     }
 
     .box-img-index img {
         display: inline;
         height: 150px;
     }
+
     .carousel2 {
         margin-top: 0;
     }
@@ -61,9 +64,10 @@
 
 /* VISTA PARA ESCRITORIO */
 @media (min-width: 992px) {
-    .boxForm label{
+    .boxForm label {
         font-size: 45px;
     }
+
     .carousel {
         width: 400px;
     }
@@ -74,7 +78,7 @@
     }
 
     .boxGeneral {
-        @include dgrid(column,3);
+        @include dgrid(column, 3);
     }
 
     .navbar {
@@ -87,21 +91,32 @@
 
     .navbar-nav {
         width: 100%;
-        @include dflex(0,0,space-evenly,0);
+        @include dflex(0, 0, space-evenly, 0);
     }
 }
 
 @media (min-width: 1200px) {
-    .ubicaciones{
+    .ubicaciones {
         width: 40%;
     }
+
     .box-img-index img {
         display: inline;
         height: 250px;
     }
 
     .boxGeneral {
-        @include dgrid(column,4);
+        @include dgrid(column, 4);
+    }
+
+    .redes {
+        img {
+            filter: grayscale(100%);
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+        }
     }
 
 }
